@@ -30,12 +30,31 @@
 
 		<aside>
 			<h3>Categorías</h3>
-			<ul>
+			<ul id="menu">
 				<li><a href="#">Tecnología</a></li>
 				<li><a href="#">Viajes</a></li>
 				<li><a href="#">Gastronomía</a></li>
 			</ul>
+			<div id="menu-icon">&#9776;</div>
 		</aside>
+		<script>
+			const menuIcon = document.getElementById('menu-icon');
+			const menu = document.getElementById('menu');
+		  
+			menuIcon.addEventListener('click', () => {
+			  menu.classList.toggle('show');
+			});
+		  </script>
+		  
+		  <style>
+			#menu {
+			  display: none;
+			}
+		  
+			#menu.show {
+			  display: block;
+			}
+		</style>
 	</main>
 
 	<footer>
