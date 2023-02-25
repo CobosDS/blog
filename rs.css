@@ -1,0 +1,13 @@
+/* Centrar widgets en la parte inferior */
+.social-widgets {
+  position: fixed;
+  bottom: 100;
+  width: 100%;
+  text-align: center;
+}
+
+/* Espacio entre widgets */
+.social-widgets div {
+  display: inline-block;
+  margin: 0 10px;
+}
